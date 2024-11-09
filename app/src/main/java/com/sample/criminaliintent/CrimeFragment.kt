@@ -78,8 +78,11 @@ class CrimeFragment: Fragment() {
     private fun updateUI() {
         titleField.setText(crime.title)
         dateButton.text = crime.date.toString()
-        solvedCheckBox.isChecked =
-            crime.isSolved
+        solvedCheckBox.apply {
+            isChecked = crime.isSolved
+            jumpDrawablesToCurrentState()
+        }
+
     }
     companion object {
         fun newInstance(crimeId: UUID): CrimeFragment {
