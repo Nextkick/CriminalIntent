@@ -86,7 +86,6 @@ class CrimeFragment: Fragment() {
             isChecked = crime.isSolved
             jumpDrawablesToCurrentState()
         }
-
     }
     companion object {
         fun newInstance(crimeId: UUID): CrimeFragment {
