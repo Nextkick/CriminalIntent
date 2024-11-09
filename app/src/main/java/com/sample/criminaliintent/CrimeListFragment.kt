@@ -47,8 +47,7 @@ class CrimeListFragment: Fragment() {
         return view
     }
 
-    override fun onViewCreated(view: View,
-                               savedInstanceState: Bundle?) {
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         crimeListViewModel.crimeListLiveData.observe(
             viewLifecycleOwner,
